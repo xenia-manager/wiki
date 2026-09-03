@@ -11,6 +11,23 @@ edit_uri = "edit/main/docs/"
 
 nav = [
   { Home = "index.md" },
+  { Installation = "installation.md" },
+  { Quickstart = "quickstart.md" },
+  { Guides = [
+    { Library = "guides/library.md" },
+    { "Manage Xenia" = "guides/manage-xenia.md" },
+    { Content = "guides/content.md" },
+    { Patches = "guides/patches.md" },
+    { "Xenia Settings" = "guides/xenia-settings.md" },
+    { "Profiles & Saves" = "guides/profiles-saves.md" },
+    { "Steam Shortcuts" = "guides/steam-shortcuts.md" },
+    { Mousehook = "guides/mousehook.md" },
+    { "Manager Settings" = "guides/manager-settings.md" },
+    { Bigscreen = "guides/bigscreen.md" },
+  ] },
+  { FAQ = "faq.md" },
+  { Troubleshooting = "troubleshooting.md" },
+  { Development = "development.md" },
 ]
 
 # extra_css = ["stylesheets/extra.css"]

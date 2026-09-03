@@ -37,7 +37,8 @@ Browse the live wiki at **[https://xenia-manager.github.io/wiki/](https://xenia-
 ### Prerequisites
 
 - [Python 3.x](https://www.python.org/)
-- [Zensical](https://zensical.org/) (`pip install zensical`)
+- [Zensical](https://zensical.org/)
+- [uv](https://docs.astral.sh/uv/) (recommended, as used in [Development](docs/development.md)) — plain `pip` also works
 
 ### Run locally
 
@@ -46,13 +47,15 @@ Browse the live wiki at **[https://xenia-manager.github.io/wiki/](https://xenia-
    git clone https://github.com/xenia-manager/wiki.git
    cd wiki
    ```
-2. Install dependencies:
+2. Install dependencies (pick one):
    ```bash
-   pip install -r requirements.txt
+   uv venv
+   uv pip install -r requirements.txt   # preferred
+   # or: pip install -r requirements.txt
    ```
 3. Start the preview server:
    ```bash
-   zensical serve
+   uv run zensical serve   # or: zensical serve
    ```
    Open `http://127.0.0.1:8000` in your browser.
 
