@@ -11,9 +11,54 @@ edit_uri = "edit/main/docs/"
 
 nav = [
   { Home = "index.md" },
+  { "Getting Started" = [
+    { Installation = "getting-started/installation.md" },
+    { Quickstart = "getting-started/quickstart.md" },
+  ] },
+  { Guides = [
+    { Emulator = [
+      { Library = "guides/library.md" },
+      { "Manage Xenia" = "guides/manage-xenia.md" },
+      { "Xenia Settings" = "guides/xenia-settings.md" },
+      { Mousehook = "guides/mousehook.md" },
+    ] },
+    { "Game Data" = [
+      { Content = "guides/content.md" },
+      { Patches = "guides/patches.md" },
+      { "Profiles & Saves" = "guides/profiles-saves.md" },
+    ] },
+    { "App Integration" = [
+      { "Steam Shortcuts" = "guides/steam-shortcuts.md" },
+      { "BigScreen Mode" = "guides/bigscreen.md" },
+      { "Manager Settings" = "guides/manager-settings.md" },
+    ] },
+  ] },
+  { BigScreen = [
+    { Overview = "big-screen/overview.md" },
+    { "Design Philosophy" = "big-screen/design-philosophy.md" },
+    { Core = [
+      { "Boot Sequence" = "big-screen/boot-sequence.md" },
+      { "Input and Navigation" = "big-screen/input-and-navigation.md" },
+      { "Modal Stack" = "big-screen/modal-stack.md" },
+      { "Services and State" = "big-screen/services-and-state.md" },
+    ] },
+    { Screens = [
+      { Dashboard = "big-screen/dashboard-deep-dive.md" },
+      { "Game Details" = "big-screen/game-details.md" },
+      { Library = "big-screen/library-deep-dive.md" },
+      { Profiles = "big-screen/profiles-deep-dive.md" },
+      { Gallery = "big-screen/gallery-deep-dive.md" },
+    ] },
+    { Glossary = "big-screen/glossary.md" },
+  ] },
+  { Help = [
+    { Troubleshooting = "help/troubleshooting.md" },
+    { FAQ = "help/faq.md" },
+    { Development = "help/development.md" },
+  ] },
 ]
 
-# extra_css = ["stylesheets/extra.css"]
+extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
@@ -41,7 +86,7 @@ features = [
   "navigation.path",
   # "navigation.prune",
   "navigation.sections",
-  # "navigation.tabs",
+  "navigation.tabs",
   # "navigation.tabs.sticky",
   "navigation.top",
   "navigation.tracking",
@@ -50,10 +95,13 @@ features = [
   # "toc.integrate",
 ]
 
-# logo = "assets/logo.png"
+[project.theme.icon]
+logo = "lucide/gamepad-2"
+repo = "fontawesome/brands/github"
 
-# [project.theme.icon]
-# logo = "lucide/smile"
+[project.theme.font]
+text = "Inter"
+code = "Cascadia Mono"
 
 # [project.theme.font]
 # text = "Inter"
@@ -61,18 +109,25 @@ features = [
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
+scheme = "default"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/sun-moon"
 toggle.name = "Switch to light mode"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
 
